@@ -1,0 +1,14 @@
+glob is I
+prok is V
+pish is G
+tegj is M
+blah is
+glob glob Silver is 34 Credits
+glob prok Gold is 57800 Dollars
+pish pish Iron is three hundred Credits
+this is random line that should be ignored
+how much is pish tegj glob glob ?
+how many Credits is glob prok Silver ?
+how Credits is glob prok Gold ?
+how many Credits is glob prok Iron 
+how much wood could a woodchuck chuck if a woodchuck could chuck wood ?

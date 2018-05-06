@@ -1,0 +1,77 @@
+This package contains the solution to "Merchant's Guide to the Galaxy".
+
+The solution has been developed using Java version 1.8.
+The tests have been written using JUnit Version 4.
+Maven Version 3.3.9 is required to follow the build instructions provided.
+
+Problem Description:
+
+The program takes an input file which contains the merchant's notes on 
+intergalactic units to Roman numeral conversion,  
+and the credits assigned to materials.
+It also contains a series of questions to determine 
+the Arabic value of an intergalactic number and
+the number of credits required for a certain number of materials.
+The program processes the input file, solves the questions, and writes the
+answers to the console.
+
+Example Input File:
+
+glob is I
+prok is V
+pish is X
+tegj is L
+glob glob Silver is 34 Credits
+glob prok Gold is 57800 Credits
+pish pish Iron is 3910 Credits
+how much is pish tegj glob glob ?
+how many Credits is glob prok Silver ?
+how many Credits is glob prok Gold ?
+how many Credits is glob prok Iron ?
+how much wood could a woodchuck chuck if a woodchuck could chuck wood ?
+
+Example Output:
+
+pish tegj glob glob is 42
+glob prok Silver is 68 Credits
+glob prok Gold is 57800 Credits
+glob prok Iron is 782 Credits
+I have no idea what you are talking about
+
+NB: Actual credit calculations may vary slightly due to rounding.
+
+
+Build Instructions:
+1) Download and Install Maven 3.3.9 by following instructions from the URL below:
+https://maven.apache.org/download.cgi#Installation
+2) Download and extract the solution zip folder to a convenient folder.
+3) The folder should contain the following directories:
+README
+pom.xml
+src/
+inputFiles/
+4) Run the following command:
+$ mvn package
+5) A target folder should be created
+
+Usage Instructions:
+To run Java Application:
+java -jar target/MerchantsGuideToTheGalaxy-0.0.1-SNAPSHOT.jar <inputFilename>
+
+e.g.
+java -jar target/MerchantsGuideToTheGalaxy-0.0.1-SNAPSHOT.jar inputFiles/sampleInput.txt
+
+
+Assumptions/Decisions made:
+
+1) Valid questions always begin with a "How much" or "How many" and end with a "?".
+2) The notes (i.e. intergalactic numeral values in Roman numbers, and credits allocated to materials) and questions are case sensitive.
+3) All intergalactic numbers and provided in lower case letters only.
+4) All materials names begin with a capital letter.
+5) Credits always begins with a capital C.
+6) The Credits assigned to materials and are provided using numeric digits (Arabic representation).
+7) Intergalactic to Roman notes always consist of three space-separated words, e.g. "glob is I"
+8) All words in the input file are space separated by one space
+
+
+
